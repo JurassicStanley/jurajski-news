@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="canonical" href="https://jurajski-news.glitch.me" />
+    <meta
+      name="description"
+      content="Wszystko, co musisz wiedzieć o Minecraft, zredagowane przez Jurajskiego Stasia"
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Jurajski News" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jurajski-news.glitch.me/" />
+    <meta
+      property="og:description"
+      content="Wszystko, co musisz wiedzieć o Minecraft, zredagowane przez Jurajskiego Stasia"
+    />
+    <meta property="og:image" content="img/jurajski-news_logo.png" />
+    <link rel="icon" type="image/x-icon" href="img/jurajski-news_logo.png" />
+    <link rel="stylesheet" href="style/style_kafelki.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Jurajski News</title>
+  </head>
+  <body>
+    <header>
+      <h1>Jurajski News</h1>
+      <p>
+        Wszystko, co musisz wiedzieć o <b>Minecraft</b>, zredagowane przez
+        Jurajskiego Stasia
+      </p>
+    </header>
+    <nav class="mobile_menu">
+      <input type="checkbox" id="sidebar_active" />
+      <label for="sidebar_active" class="open_sidebar_button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="32px"
+          viewBox="0 -960 960 960"
+          width="32px"
+          fill="#fff"
+        >
+          <path
+            d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+          />
+        </svg>
+      </label>
+
+      <div class="links_container">
+        <label for="sidebar_active" class="close_sidebar_button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="32px"
+            viewBox="0 -960 960 960"
+            width="32px"
+            fill="#fff"
+          >
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+            />
+          </svg>
+        </label>
+
+        <a class="home_link" href="">Strona Główna</a>
+        <a href="https://www.youtube.com/JurajskiStas" target="_blank"
+          >YouTube</a
+        >
+        <a href="https://www.tiktok.com/@jurajskistas" target="_blank"
+          >TikTok</a
+        >
+        <a href="https://x.com/JurajskiS" target="_blank">Twitter</a>
+        <a href="https://discord.gg/XtVFvcHhCs" target="_blank">Discord</a>
+      </div>
+    </nav>
+    <main>
+      <div class="col-1"></div>
+      <div class="col-2">
+        <p>
+          Witamy na witrynie Jurajski News, a właściwie jej
+          <b>prototypie</b>. Projekt jest na bardzo
+          <b>wczesnym etapie rozwoju</b> i stopniowo wprowadzane są kolejne
+          funkcjonalności.<br />
+          Strona powinna dopasowywać się do różnych urządzeń, co oznacza, że
+          jest responsywna.<br />
+          Zauważone błędy prosimy zgłaszać bezpośrednio do Jurajskiego Stasia.
+        </p>
+        <p>Pozdrawiamy,<br />Zespół Wiki (czyli sam Jurajski)</p>
+        <h2>Artykuły</h2>
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Szukaj w artykułach (np. Minecraft)"
+          class="search-input"
+        />
+        <div id="searchResults"></div>
+        <ul class="artykuly">
+          <li class="kafelek kafelek-size-1x1">
+            <a
+              href="articles/fog_update.html"
+              aria-label="Odświeżona Mgła"
+              data-aem-contentname="tile-action"
+              data-bi-ecn="tile-action"
+              data-bi-cn="tile-action"
+            >
+              <picture class="MC_imageGridA_picture">
+                <img
+                  class="imgGrid_picture"
+                  aria-hidden="true"
+                  src="img/fog_update/okladka.png"
+                  alt="Jurajski Staś strzela do kurczaka"
+                />
+              </picture>
+              <div class="imgGrid_text_container">
+                <div class="imgGrid_text">
+                  <div class="imgGrid_text_caption">
+                    <div class="imgGrid_text_category_container">
+                      <div class="imgGrid_text_category">Nowinki</div>
+                    </div>
+                    <h3 class="Article_Title">
+                      Odświeżona Mgła
+                    </h3>
+                    <p class="MC_imageGridA_blurb">
+                      Minecraft zyskuje świeży, klimatyczny wygląd dzięki nowej mgle otoczenia
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="kafelek kafelek-size-1x1">
+            <a
+              href="articles/a_minecraft_movie_trailer_3.html"
+              aria-label="Nowy Zwiastun Minecraft Film"
+              data-aem-contentname="tile-action"
+              data-bi-ecn="tile-action"
+              data-bi-cn="tile-action"
+            >
+              <picture class="MC_imageGridA_picture">
+                <img
+                  class="imgGrid_picture"
+                  aria-hidden="true"
+                  src="img/a_minecraft_movie_trailer_3/osadnicy.png"
+                  alt="Scena z filmu Minecraft przedstawiajaca osadników"
+                />
+              </picture>
+              <div class="imgGrid_text_container">
+                <div class="imgGrid_text">
+                  <div class="imgGrid_text_caption">
+                    <div class="imgGrid_text_category_container">
+                      <div class="imgGrid_text_category">Nowinki</div>
+                    </div>
+                    <h3 class="Article_Title">
+                      Nowy Zwiastun "Minecraft Film"
+                    </h3>
+                    <p class="MC_imageGridA_blurb">
+                      Nowy zwiastun "Minecraft Film" ujawnia nowe sceny z filmu
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="kafelek kafelek-size-1x1">
+            <a
+              href="articles/colourful_sheep.html"
+              aria-label="Więcej Nowości w Nowym Dropie"
+              data-aem-contentname="tile-action"
+              data-bi-ecn="tile-action"
+              data-bi-cn="tile-action"
+            >
+              <picture class="MC_imageGridA_picture">
+                <img
+                  class="imgGrid_picture"
+                  aria-hidden="true"
+                  src="https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/marketplace/1_MCV_SpringDrop_testing_Feb12_General_1280x720%20(2).jpg"
+                  alt="Zrzut ekranu przedstawiający ulepszone owce"
+                />
+              </picture>
+              <div class="imgGrid_text_container">
+                <div class="imgGrid_text">
+                  <div class="imgGrid_text_caption">
+                    <div class="imgGrid_text_category_container">
+                      <div class="imgGrid_text_category">Nowinki</div>
+                    </div>
+                    <h3 class="Article_Title">Odświeżona Zawartość</h3>
+                    <p class="MC_imageGridA_blurb">
+                      Nowe usprawnienia nadchodzą do Minecraft
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-3"></div>
+    </main>
+    <footer>
+      <p>
+        <b>© Jurajski Staś <span id="currentYear"></span></b>
+      </p>
+      <script>
+        // Pobranie aktualnego roku
+        const year = new Date().getFullYear();
+        document.getElementById("currentYear").textContent = year;
+      </script>
+    </footer>
+    <script src="scripts/mobile_menu.js"></script>
+    <script src="scripts/searchbar.js"></script>
+  </body>
+</html>
