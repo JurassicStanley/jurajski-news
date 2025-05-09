@@ -1,0 +1,364 @@
+/* Ustawienie box-sizing dla wszystkich elementów */
+* {
+  box-sizing: border-box;
+}
+
+/* Zdefiniowanie niestandardowej czcionki "MinecraftTen" */
+@font-face {
+  font-family: "MinecraftTen";
+  src: url("../fonts/MinecraftTen.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Zdefiniowanie niestandardowej czcionki "MinecraftPl" */
+@font-face {
+  font-family: "MinecraftPl";
+  src: url("../fonts/MinePolski.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Stylizowanie dla elementu body */
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Noto Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  font-weight: normal;
+  margin: 0;
+  background-color: #171615;
+  color: #ffffff;
+}
+
+/* Div główny */
+main::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Ustalanie customowych czcionek dla wielu elementów */
+h1,
+h2 {
+  font-family: MinecraftTen;
+}
+
+/* Nagłówek */
+header {
+  position: relative;
+  min-height: 125px;
+  text-align: center;
+  padding: 20px;
+  color: #ffffff;
+}
+
+/* Stylizacja paragrafów */
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+  line-height: 1.5;
+}
+
+header p,
+h1 {
+  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5)); /* Delikatny cień */
+}
+
+header::before {
+  content: ""; /* Dodanie pseudo-elementu */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../img/baner.png");
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+  filter: blur(10px); /* Rozmazanie tła */
+  z-index: -1; /* Pseudo-element znajduje się poniżej zawartości */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+  font-weight: normal;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  letter-spacing: -0.54px;
+  font-weight: normal;
+}
+
+.article_author {
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Stylowanie dla wszystkich kolumn */
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+/* Menu z listami rozwijalnymi */
+.col-1,
+.col-3 {
+  width: 10%;
+}
+
+/* Sekcja z artykułami */
+.col-2 {
+  width: 80%;
+  min-height: calc(100vh - 254px);
+}
+
+/* Stylizacja kolumny */
+.col::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Menu rozwijane */
+nav.mobile_menu {
+  height: 60px;
+  max-width: none;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #262423;
+  border-radius: 0;
+  padding: 0;
+}
+
+.links_container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+nav.mobile_menu a {
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  transition: ease-in-out 0.25s;
+  font-family: MinecraftTen;
+}
+
+nav.mobile_menu a:hover {
+  background-color: #333130;
+}
+
+nav.mobile_menu .home_link {
+  margin-right: auto;
+}
+
+nav.mobile_menu svg {
+  fill: #ffffff;
+}
+
+#sidebar_active,
+.open_sidebar_button,
+.close_sidebar_button {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 517px) {
+  .links_container {
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 10;
+    width: 240px;
+    background-color: rgba(38, 36, 35, 0.9);
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
+    transition: 0.25s ease-in-out;
+  }
+
+  .mobile_menu a {
+    box-sizing: border-box;
+    height: 60px !important;
+    width: 100%;
+    padding: 20px 30px;
+    justify-content: flex-start;
+  }
+
+  .open_sidebar_button,
+  .close_sidebar_button {
+    display: block;
+    padding: 0 20px;
+  }
+
+  .close_sidebar_button {
+    padding-top: 20px;
+  }
+
+  #sidebar_active:checked ~ .links_container {
+    left: 0;
+  }
+}
+
+/* Stylizacja stopki */
+footer {
+  clear: both;
+  background-color: #262423;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  padding: 1px;
+}
+
+/* Szerokość kolumn na urządzeniach mobilnych */
+@media only screen and (max-width: 1550px) {
+  main {
+    flex-direction: column;
+  }
+
+  .col-2 {
+    width: 70%;
+  }
+
+  .col-1,
+  .col-3 {
+    width: 15%;
+  }
+}
+
+@media only screen and (max-width: 1260px) {
+  main {
+    flex-direction: column;
+  }
+
+  .col-2 {
+    width: 100%;
+    border: none;
+  }
+
+  .col-1,
+  .col-3 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .col-1 h2 {
+    text-align: center;
+  }
+}
+
+/* Stylizacja pola wyszukiwania */
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 15px;
+  margin: 20px 0;
+  background-color: #262423;
+  border: 2px solid #4d4c4b;
+  color: #ffffff;
+  font-family: MinecraftPl;
+  font-size: 1.2rem;
+  transition: border-color 0.25s ease-in-out;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #ffffff;
+}
+
+/* Stylizacja wyników wyszukiwania */
+#searchResults {
+  margin: 20px 0;
+}
+
+.search-result-item {
+  background-color: #262423;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #4d4c4b;
+  transition: transform 0.25s ease-in-out;
+}
+
+.search-result-item:hover {
+  transform: translateY(-2px);
+}
+
+.search-result-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.search-result-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.search-result-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.search-result-text {
+  flex: 1;
+}
+
+.search-result-item h3 {
+  font-family: MinecraftPl;
+  font-size: 2.5rem;
+  margin: 0 0 5px 0;
+}
+
+.search-result-item p {
+  font-family: MinecraftPl;
+  font-size: 1.2rem;
+  line-height: 18px;
+  margin: 0;
+  color: #cccccc;
+}
+
+.no-results {
+  font-family: MinecraftPl;
+  font-size: 1.2rem;
+  color: #cccccc;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Responsywność */
+@media (max-width: 600px) {
+  .search-result-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-result-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+}

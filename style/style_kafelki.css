@@ -1,0 +1,155 @@
+/* Stylizacja linków w kafelkach */
+.kafelek a {
+  font-family: MinecraftPl;
+  color: white;
+  font-size: 2rem;
+}
+
+h3.Article_Title {
+  display: block;
+  font-family: var(--mc-legends-fontlist);
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 0.1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-top: 0.2em;
+  unicode-bidi: isolate;
+}
+
+/* Stylizacja sekcji z artykułami */
+.artykuly {
+  display: grid;
+  grid-gap: 32px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-flow: row dense;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  margin: 55px 0 20px 0 !important;
+}
+
+/* Stylizacja kafelków */
+.kafelek {
+  position: relative;
+  box-sizing: border-box;
+  grid-column-start: auto;
+  grid-row-start: auto;
+  cursor: pointer;
+  height: 100%;
+  width: auto;
+  overflow: hidden;
+  border-bottom: 3px solid #4d4c4b;
+  transition: transform 0.25s ease-in-out; /* Dodano efekt przejścia */
+}
+
+/* Stylizacja obrazów w siatce */
+.imgGrid_picture {
+  display: block;
+  width: 100%; /* Obraz dostosowuje się do szerokości kafelka */
+  height: 100%; /* Obraz dostosowuje się do wysokości kafelka */
+  object-fit: cover; /* Zachowanie proporcji obrazu i wypełnienie kafelka */
+  transition: transform 0.25s ease-in-out; /* Dodano efekt przejścia */
+}
+
+.kafelek:hover .imgGrid_picture {
+  transform: scale(1.05); /* Powiększenie obrazka */
+}
+
+/* Stylizacja kafelków 1x1 */
+.kafelek-size-1x1 {
+  aspect-ratio: 1 / 1;
+}
+
+/* Kontener tekstu w siatce */
+.imgGrid_text_container {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: auto;
+}
+
+/* Opis tekstu w siatce */
+.imgGrid_text_caption {
+  display: block;
+  background: linear-gradient(
+    to bottom,
+    rgba(23, 22, 21, 0) 0%,
+    /* Przeźroczyste tło na górze */ rgba(23, 22, 21, 0) 8px,
+    /* Przeźroczyste tło do 25px */ rgba(23, 22, 21, 0.8) 8px,
+    /* Opaque tło od 25px w dół */ rgba(23, 22, 21, 0.8) 100%
+  );
+  padding: 0.875rem 0.75rem 0.25rem 0.75rem;
+  text-align: left;
+  overflow: hidden;
+  max-height: 80px;
+  transition: max-height 0.25s ease-in-out;
+}
+
+/* Pełne wyświetlenie tekstu po najechaniu */
+.kafelek:hover .imgGrid_text_caption {
+  max-height: 200px;
+}
+
+/* Kontener na nazwę kategorii artykułu */
+.imgGrid_text_category_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-top: -16px;
+}
+
+/* Kategoria tekstu w siatce */
+.imgGrid_text_category {
+  font-family: var(--mc-legends-fontlist);
+  text-align: center;
+  z-index: 1;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.56px;
+  background-color: #ffffff;
+  color: #1d1e1e;
+  padding: 0 4px 1px 4px;
+  text-transform: uppercase;
+  box-shadow: 2px 2px 0 0 #0000004d;
+}
+
+/* Opis artykułu */
+.MC_imageGridA_blurb {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0.2em;
+  opacity: 0;
+  transition: height 0.25s ease-in-out, opacity 0.25s ease-in-out;
+  line-height: 0.7em;
+}
+
+.kafelek:hover .MC_imageGridA_blurb {
+  opacity: 100;
+}
+
+@media only screen and (max-width: 560px) {
+  .artykuly {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+
+  /* Kategoria tekstu w siatce */
+  .imgeGrid_text_category {
+    font-size: 1rem;
+  }
+
+  .MC_imageGridA_blurb {
+    font-size: 1.2rem;
+    margin-top: 0rem;
+  }
+
+  h3.Article_Title {
+    font-size: 0.88em;
+    margin-top: 0.1em;
+  }
+}
