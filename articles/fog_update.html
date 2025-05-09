@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../img/jurajski-news_logo.png" />
+    <link rel="stylesheet" href="../style/style_article.css" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>Jurajski News</title>
+  </head>
+  <body>
+    <header>
+      <h1>Jurajski News</h1>
+      <p>
+        Wszystko, co musisz wiedzieć o <b>Minecraft</b>, zredagowane przez
+        Jurajskiego Stasia
+      </p>
+    </header>
+    <nav class="mobile_menu">
+      <input type="checkbox" id="sidebar_active" />
+      <label for="sidebar_active" class="open_sidebar_button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="32px"
+          viewBox="0 -960 960 960"
+          width="32px"
+          fill="#fff"
+        >
+          <path
+            d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+          />
+        </svg>
+      </label>
+
+      <div class="links_container">
+        <label for="sidebar_active" class="close_sidebar_button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="32px"
+            viewBox="0 -960 960 960"
+            width="32px"
+            fill="#fff"
+          >
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+            />
+          </svg>
+        </label>
+
+        <a class="home_link" href="../index.html">Strona Główna</a>
+        <a href="https://www.youtube.com/JurajskiStas" target="_blank"
+          >YouTube</a
+        >
+        <a href="https://www.tiktok.com/@jurajskistas" target="_blank"
+          >TikTok</a
+        >
+        <a href="https://x.com/JurajskiS" target="_blank">Twitter</a>
+        <a href="https://discord.gg/XtVFvcHhCs" target="_blank">Discord</a>
+      </div>
+    </nav>
+    <main>
+      <div class="article_col-1">
+        <div class="additional_image">
+          <img class="author_image" src="../img/Jurajski_Mojavatar.png" />
+        </div>
+        <h4 class="article_author">
+          <b>Napisane przez</b><br />
+          Jurajski Staś<br /><br />
+          <b>Opublikowano</b><br />
+          08.05.2025
+        </h4>
+      </div>
+      <div class="article_col-2">
+        <article>
+          <h1>Odświeżona Mgła</h1>
+          <p>
+            Zmieniono sposób działania mgły w grze i choć z pozoru brzmi to jak
+            kosmetyczna ciekawostka, to w praktyce ma spore znaczenie dla
+            klimatu i czytelności świata. Do tej pory wszystkie efekty mgły –
+            czy to wynikające z otoczenia, czy ograniczeń renderowania – były
+            wrzucone do jednego wora i traktowane jednakowo. Od teraz wszystko
+            jest poukładane jak trzeba, bo mgła została podzielona na dwa osobne
+            typy: środowiskową i zależną od odległości renderowania. Ta pierwsza
+            – czyli mgła środowiskowa – to to, co gracz odczuwa bezpośrednio w
+            swoim otoczeniu: gęsta mgła podczas deszczu i śnieżycy, czy subtelne
+            zamglenie w nocy. Z kolei mgła renderowania to ta, która zaczyna się
+            pojawiać na krawędzi widzialnego świata, czyli w miejscu, gdzie
+            kończy się odległość renderowania terenu.
+          </p>
+          <h2 class="gallery_note">Porównanie poprzedniej i obecnej mgły</h2>
+          <section class="img_compare">
+            <div class="img_compare_container">
+              <img
+                class="before_img_compare"
+                src="../img/fog_update/mgla_przed.png"
+                alt="Mgła przed"
+              />
+              <img
+                class="after_img_compare"
+                src="../img/fog_update/mgla_po.png"
+                alt="Mgła po"
+              />
+              <input
+                type="range"
+                class="img_compare_slider"
+                min="0"
+                max="100"
+                value="50"
+              />
+              <div class="slider_line">
+                <div class="slider_icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.25 15 12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </section>
+          <p>
+            Zmiana na pierwszy rzut oka może się wydawać subtelna, jednak w
+            wielu przypadkach jest bardzo widoczna. Generalnie mgła jest teraz
+            bardziej spójna z tym, co widzielibyśmy w warunkach naturalnych – i
+            o to właśnie chodziło.
+          </p>
+          <h2 class="gallery_note">Widok z lotu ptaka</h2>
+          <section class="img_compare">
+            <div class="img_compare_container">
+              <img
+                class="before_img_compare"
+                src="../img/fog_update/z_lotu_przed.png"
+                alt="Mgła przed"
+              />
+              <img
+                class="after_img_compare"
+                src="../img/fog_update/z_lotu_po.png"
+                alt="Mgła po"
+              />
+              <input
+                type="range"
+                class="img_compare_slider"
+                min="0"
+                max="100"
+                value="50"
+              />
+              <div class="slider_line">
+                <div class="slider_icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.25 15 12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </section>
+          <p>
+            Największym zarzutem, jaki można postawić przed nowym systemem mgły,
+            jest mocne wytracanie kolorów nawet w kontekście kilkunastu
+            najbliższych bloków. Uważam, że w wielu przypadkach wygląda to
+            naprawdę źle, choć zapewne znajdą się gracze, którym obecne
+            zamglenie wygląda dużo lepiej.
+          </p>
+          <h2 class="gallery_note">Mgła podczas deszczu</h2>
+          <section class="img_compare">
+            <div class="img_compare_container">
+              <img
+                class="before_img_compare"
+                src="../img/fog_update/deszcz_przed.png"
+                alt="Mgła przed"
+              />
+              <img
+                class="after_img_compare"
+                src="../img/fog_update/deszcz_po.png"
+                alt="Mgła po"
+              />
+              <input
+                type="range"
+                class="img_compare_slider"
+                min="0"
+                max="100"
+                value="50"
+              />
+              <div class="slider_line">
+                <div class="slider_icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.25 15 12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </section>
+          <p>
+            Na wyróżnienie zasługuje mgła podczas deszczu i śnieżycy. W tych
+            warunkach sprawdza się wyśmienicie, dodając mnóstwo klimatu i
+            realizmu, szczególnie w kontekście śnieżycy, w której moim zdaniem
+            mgła sprawdza się najlepiej.
+          </p>
+          <h2 class="gallery_note">mgła podczas śnieżycy</h2>
+          <section class="img_compare">
+            <div class="img_compare_container">
+              <img
+                class="before_img_compare"
+                src="../img/fog_update/sniezyca_przed.png"
+                alt="Mgła przed"
+              />
+              <img
+                class="after_img_compare"
+                src="../img/fog_update/sniezyca_po.png"
+                alt="Mgła po"
+              />
+              <input
+                type="range"
+                class="img_compare_slider"
+                min="0"
+                max="100"
+                value="50"
+              />
+              <div class="slider_line">
+                <div class="slider_icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.25 15 12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </section>
+          <p>
+            Wcześniej stuprocentowa widoczność w takich warunkach nie miała za
+            dużo sensu, bo przecież wraz ze zwiększającą się odległością,
+            sceneria zasłaniana jest spadające płatki śniegu, czy krople
+            deszczu, czego wcześniej w Minecraft brakowało.
+          </p>
+          <h2 class="gallery_note">mgła w nocy</h2>
+          <section class="img_compare">
+            <div class="img_compare_container">
+              <img
+                class="before_img_compare"
+                src="../img/fog_update/noc_przed.png"
+                alt="Mgła przed"
+              />
+              <img
+                class="after_img_compare"
+                src="../img/fog_update/noc_po.png"
+                alt="Mgła po"
+              />
+              <input
+                type="range"
+                class="img_compare_slider"
+                min="0"
+                max="100"
+                value="50"
+              />
+              <div class="slider_line">
+                <div class="slider_icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.25 15 12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </section>
+          <p>
+            Co ciekawe, nocą mgła jest prawie niewidoczna i porównując ją do
+            poprzedniej wersji, różnice dostrzeżemy dopiero na dużych
+            odległościach.
+          </p>
+          <h2 class="gallery_note">mgła o zachodzie słońca</h2>
+          <section class="img_compare">
+            <div class="img_compare_container">
+              <img
+                class="before_img_compare"
+                src="../img/fog_update/zachod_przed.png"
+                alt="Mgła przed"
+              />
+              <img
+                class="after_img_compare"
+                src="../img/fog_update/zachod_po.png"
+                alt="Mgła po"
+              />
+              <input
+                type="range"
+                class="img_compare_slider"
+                min="0"
+                max="100"
+                value="50"
+              />
+              <div class="slider_line">
+                <div class="slider_icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.25 15 12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </section>
+          <p>
+            Inaczej jest jednak w przypadku zachodów słońca, które dzięki mgle
+            wpadającej w pomarańczowe odcienie, wyglądają naprawdę klimatycznie.
+          </p>
+          <h2 class="gallery_note">mgła w netherze</h2>
+          <section class="img_compare">
+            <div class="img_compare_container">
+              <img
+                class="before_img_compare"
+                src="../img/fog_update/nether_przed.png"
+                alt="Mgła przed"
+              />
+              <img
+                class="after_img_compare"
+                src="../img/fog_update/nether_po.png"
+                alt="Mgła po"
+              />
+              <input
+                type="range"
+                class="img_compare_slider"
+                min="0"
+                max="100"
+                value="50"
+              />
+              <div class="slider_line">
+                <div class="slider_icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.25 15 12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </section>
+          <p>
+            Nie zabrakło jednak scenerii, w których nowa mgła wygląda niemal
+            identycznie. Do takich miejsc zaliczymy nether, gdzie zmiany
+            zauważalne są w kontekście odległości widzenia, jest teraz odrobinę
+            większa.
+          </p>
+          <h2 class="gallery_note">mgła w endzie</h2>
+          <section class="img_compare">
+            <div class="img_compare_container">
+              <img
+                class="before_img_compare"
+                src="../img/fog_update/end_przed.png"
+                alt="Mgła przed"
+              />
+              <img
+                class="after_img_compare"
+                src="../img/fog_update/end_po.png"
+                alt="Mgła po"
+              />
+              <input
+                type="range"
+                class="img_compare_slider"
+                min="0"
+                max="100"
+                value="50"
+              />
+              <div class="slider_line">
+                <div class="slider_icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.25 15 12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </section>
+          <p>
+            End generalnie lekko wyblaknie i ściemnieje, choć są to zmiany
+            marginalne.
+          </p>
+          <h2 class="gallery_note">mgła pod wodą</h2>
+          <section class="img_compare">
+            <div class="img_compare_container">
+              <img
+                class="before_img_compare"
+                src="../img/fog_update/woda_przed.png"
+                alt="Mgła przed"
+              />
+              <img
+                class="after_img_compare"
+                src="../img/fog_update/woda_po.png"
+                alt="Mgła po"
+              />
+              <input
+                type="range"
+                class="img_compare_slider"
+                min="0"
+                max="100"
+                value="50"
+              />
+              <div class="slider_line">
+                <div class="slider_icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.25 15 12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </section>
+          <p>
+            Widoczność pod wodą natomiast prezentuje się jednak nieco lepiej i
+            już któryś raz dzisiaj powiem, że lepiej oddaje rzeczywiste warunki.
+            W pobliżu bloki nie są już tak dobrze widoczne z oddaniem niemal
+            identycznych kolorów, jak na powierzchni i zanikanie widoczności
+            również jest dużo płynniejsze.
+          </p>
+          <h2 class="gallery_note">mgła w jaskiniach</h2>
+          <section class="img_compare">
+            <div class="img_compare_container">
+              <img
+                class="before_img_compare"
+                src="../img/fog_update/jaskinie_przed.png"
+                alt="Mgła przed"
+              />
+              <img
+                class="after_img_compare"
+                src="../img/fog_update/jaskinie_po.png"
+                alt="Mgła po"
+              />
+              <input
+                type="range"
+                class="img_compare_slider"
+                min="0"
+                max="100"
+                value="50"
+              />
+              <div class="slider_line">
+                <div class="slider_icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.25 15 12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </section>
+          <p>
+            Na koniec zostawiłem porównanie jaskiń, gdzie jeśli nie trafimy na
+            wielką jaskinię, to większych różnic nie ujrzymy.
+          </p>
+          <h2 class="gallery_note">Przegląd nowości</h2>
+          <p>
+            Film ze szczegółowym omówieniem wszystkich zmian i nowości, jakie
+            zaszły w Snapshocie 25w19a, znajdziesz na kanale YouTube Jurajski
+            Staś.
+          </p>
+          <div class="additional_image">
+            <a href="https://youtu.be/J9S0WZmeWnw" target="_blank">
+              <img
+                alt="Miniaturka Filmu Jurajskiego"
+                src="../img/fog_update/miniaturka.png"
+              />
+            </a>
+          </div>
+          <p>
+            Dziękujemy za przeczytanie naszego artykułu, zachęcamy do zgłaszania
+            błędów w komentarzach na kanale YouTube <b>Jurajski Staś</b> lub na
+            Serwerze Discord <b>JS Server</b>. Linki do wspomnianych platform
+            znajdziesz na stronie głównej naszej witryny w sekcji menu.
+          </p>
+
+          <p class="note">
+            <b>Informacja o prawach autorskich:</b><br />
+            Treść artykułu jest chroniona prawami autorskimi autora i
+            <b>Jurajski News</b>.
+          </p>
+        </article>
+      </div>
+      <div class="article_col-3"></div>
+    </main>
+    <footer>
+      <p>
+        <b>&copy; Jurajski Staś <span id="currentYear"></span></b>
+      </p>
+      <script>
+        // Pobranie aktualnego roku
+        const year = new Date().getFullYear();
+
+        // Wstawienie roku do elementu o ID "currentYear"
+        document.getElementById("currentYear").textContent = year;
+      </script>
+    </footer>
+    <script src="../scripts/gallery.js"></script>
+    <script src="../scripts/img_compare.js"></script>
+  </body>
+</html>
