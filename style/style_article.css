@@ -47,8 +47,9 @@ a {
 .additional_image img {
   border-radius: 0.5rem;
   width: 85%;
-  height: 100%;
   max-width: 48rem;
+  height: auto;
+  object-fit: cover;
   filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
 }
 
