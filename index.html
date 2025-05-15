@@ -241,13 +241,31 @@
       <div class="col-3"></div>
     </main>
     <footer>
-      <p>
-        <b>© Jurajski Staś <span id="currentYear"></span></b>
-      </p>
+      <div class="footer-content">
+        <p class="footer-title">
+          <span id="currentYear"></span>
+        </p>
+        <p class="footer-desc">
+          Jurajski News – codzienna dawka nowinek, poradników i ciekawostek ze
+          świata Minecrafta
+        </p>
+        <p class="footer-contact">
+          Kontakt:
+          <a href="mailto:dlajurajskiego@gmail.com">dlajurajskiego@gmail.com</a>
+        </p>
+        <p class="footer-legal">
+          <small
+            >Strona nie jest powiązana z Mojang Studios ani Microsoftem.
+            Minecraft to znak towarowy Mojang AB.</small
+          >
+        </p>
+      </div>
+
       <script>
-        // Pobranie aktualnego roku
+        // Ustawienie aktualnego roku w stopce
         const year = new Date().getFullYear();
-        document.getElementById("currentYear").textContent = year;
+        document.getElementById("currentYear").textContent =
+          "©" + " " + year + " " + "Jurajski News";
       </script>
     </footer>
     <script src="scripts/mobile_menu.js"></script>
