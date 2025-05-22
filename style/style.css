@@ -142,6 +142,9 @@ nav.mobile_menu {
   background-color: #262423;
   border-radius: 0;
   padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .links_container {
@@ -182,7 +185,7 @@ nav.mobile_menu svg {
   cursor: pointer;
 }
 
-@media (max-width: 517px) {
+@media (max-width: 579px) {
   .links_container {
     flex-direction: column;
     align-items: flex-start;
