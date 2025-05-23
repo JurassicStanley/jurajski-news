@@ -88,6 +88,7 @@ li {
 .container {
   margin-top: 1.5em;
   max-width: 100%;
+  padding: 0;
 }
 
 .gallery_button {
@@ -283,7 +284,6 @@ li {
     display: none;
   }
 
-  .container,
   .img_compare .img_compare_container {
     width: 85%;
     padding: 0;
